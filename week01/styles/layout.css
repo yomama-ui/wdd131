@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-family: Arial, sans-serif;
+}
+
+
+header {
+  background: #303f9f;
+  color: white;
+  padding: 1rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  background: #1a237e;
+  padding: 0.5rem;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+section, aside {
+  background: #eeeeee;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+
+footer {
+  background: #303f9f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
