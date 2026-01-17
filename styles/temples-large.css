@@ -1,0 +1,19 @@
+@media only screen and (min-width: 40rem) {
+
+    /* Desktop nav */
+    #menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    /* GRID: 3 columns */
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
