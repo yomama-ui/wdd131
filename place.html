@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tokyo, Japan – WDD 131 Country Page</title>
+
+  <meta name="description" content="Tokyo, Japan country page for WDD 131 – Dynamic Web Fundamentals. Includes basic data, weather, and responsive hero imagery.">
+  <meta name="author" content="Ethan Gonzalez">
+
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="hero">
+      <picture>
+        <!-- Large screens -->
+        <source srcset="images/tokyo-hero-large.jpg" media="(min-width: 64rem)">
+        <!-- Medium screens -->
+        <source srcset="images/tokyo-hero-medium.jpg" media="(min-width: 40rem)">
+        <!-- Default / mobile -->
+        <img src="images/tokyo-hero-small.jpg"
+             alt="Night view of Tokyo city skyline with Tokyo Tower"
+             width="800" height="400">
+      </picture>
+
+      <div class="hero-text">
+        <h1>Tokyo, Japan</h1>
+        <p>Modern city, rich traditions, and endless neon nights.</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="data" class="card">
+      <h2>City Data</h2>
+      <dl>
+        <div>
+          <dt>Country</dt>
+          <dd>Japan</dd>
+        </div>
+        <div>
+          <dt>Region</dt>
+          <dd>Kantō</dd>
+        </div>
+        <div>
+          <dt>Population</dt>
+          <dd>~14 million (city)</dd>
+        </div>
+        <div>
+          <dt>Official Language</dt>
+          <dd>Japanese</dd>
+        </div>
+        <div>
+          <dt>Currency</dt>
+          <dd>Japanese Yen (¥)</dd>
+        </div>
+        <div>
+          <dt>Time Zone</dt>
+          <dd>Japan Standard Time (UTC+9)</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section id="weather" class="card">
+      <h2>Weather</h2>
+
+      <div class="weather-content">
+        <!-- SVG icon for MOBILE view -->
+        <img src="images/weather-icon.jpg"
+             alt="Partly cloudy weather icon"
+             class="weather-icon">
+
+        <div class="weather-details">
+          <p>
+            <span class="label">Temperature:</span>
+            <span id="temp">46</span> °F
+          </p>
+          <p>
+            <span class="label">Wind Speed:</span>
+            <span id="wind-speed">8</span> mph
+          </p>
+          <p>
+            <span class="label">Wind Chill:</span>
+            <span id="wind-chill">N/A</span>
+          </p>
+          <p>
+            <span class="label">Conditions:</span>
+            Cool, breezy, and partly cloudy.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="currentyear"></span> | Ethan Gonzalez | California, USA
+    </p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
