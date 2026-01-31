@@ -1,0 +1,47 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #1f2933;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+nav button {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+#temple-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
