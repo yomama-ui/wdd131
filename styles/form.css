@@ -1,0 +1,55 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #f9fafb;
+}
+
+header {
+  background: #1f2933;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.required {
+  color: #b91c1c;
+}
+
+input[type="submit"] {
+  background: #2563eb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.75rem;
+}
+
+.confirmation {
+  text-align: center;
+  padding: 2rem;
+}
