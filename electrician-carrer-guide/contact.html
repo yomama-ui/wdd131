@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="styles/project.css">
+<script src="scripts/project.js" defer></script>
+</head>
+
+<body>
+<header>
+  <h1>Contact / Apprenticeship Interest</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="careers.html">Career Paths</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <form id="interest-form">
+    <label for="name">Name *</label>
+    <input type="text" id="name" required>
+
+    <label for="experience">Experience Level *</label>
+    <select id="experience" required>
+      <option value="" disabled selected>Select Level</option>
+      <option value="beginner">Beginner</option>
+      <option value="apprentice">Apprentice</option>
+      <option value="journeyman">Journeyman</option>
+    </select>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <p id="form-message"></p>
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Ethan Gonzalez</p>
+  <a href="references.html">References</a>
+</footer>
+</body>
+</html>
